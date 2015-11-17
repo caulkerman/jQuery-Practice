@@ -30,3 +30,36 @@
 	background-color: pink;
 	/*display: inline-block;*/
 }
+
+.formWrapper {
+	width: 600px;
+	margin: 0 auto;
+	font-family: helvetica;
+}
+
+.input {
+	width: 300px;
+	height: 20px;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 1.2em;
+	border: solid gray 1px;
+	margin-bottom: 10px;
+}
+
+label {
+	font-size: 1.2em;
+	width: 175px;
+	float: left;
+	padding: 6px;
+	/*font-weight: 900;*/
+}
+
+#submitButton {
+	height: 35px;
+	width: 150px;
+	background-color: #0099ff;
+	border: solid 1px gray;
+	border-radius: 4px;
+	margin: 0 0 0 187px;
+}

@@ -49,7 +49,7 @@ $("p").click(function() {
 
 
 $("#textFadeOut").click(function() {
-	$("h2").fadeOut(2000, function() {
+	$("#h2").fadeOut(2000, function() {
 		alert("FadeOut Complete");
 	});
 	$(".square").css("background-color", "black")
@@ -73,10 +73,16 @@ $("#circle2").click(function() {
 	})
 })
 
-var string = "Regex is Great";
-var regex = /great/i;
-var result = string.match(regex);
-alert(result);
+// var string = "Regex is Great";
+// var regex = /great/i;
+// var result = string.match(regex);
+// alert(result);
+
+$("#validationForm").submit(function(event) {
+	event.preventDefault();
+	alert("This is a test for the validationForm")
+
+})
 
 
 });
