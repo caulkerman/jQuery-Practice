@@ -30,7 +30,7 @@ $(".blueSquare").on("dblclick", function() {
 
 
 $(".blueSquare").mouseenter(function() {
-	$(".blueSquare").css("background-color", "purple");
+	$(this).css("background-color", "purple");
 	$("#circle").css("background-color", "blue");
 });
 
