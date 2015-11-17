@@ -1,0 +1,32 @@
+.square {
+	margin: 10px;
+	height: 100px;
+	width: 100px;
+	background-color: red;
+	display: inline-block;
+}
+
+#circle {
+	margin: 10px;
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	background-color: green;
+	display: inline-block;
+}
+
+.blueSquare {
+	margin: 10px;
+	height: 100px;
+	width: 100px;
+	background-color: blue;
+}
+
+#circle2 {
+	margin: 10px;
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	background-color: pink;
+	/*display: inline-block;*/
+}
