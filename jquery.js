@@ -78,11 +78,65 @@ $("#circle2").click(function() {
 // var result = string.match(regex);
 // alert(result);
 
+
+/////////////////FORM VALIDATION////////////////////
+
 $("#validationForm").submit(function(event) {
 	event.preventDefault();
-	alert("This is a test for the validationForm")
+// 	alert("This is a test for the validationForm")
 
 })
+
+$('.form_error').hide();
+      $('#submitButton').click(function(){
+           var password = $('.password').val();
+           var email = $('.email').val();
+           var phone = $('.phone').val();
+           var confirmPassword = $('.confirmPassword').val();
+
+            if(email == ''){
+               $('.email').next().show();
+               return false;
+            }
+            if(IsEmail(email) == false){//function caller here.
+                $('#invalid_email').show();
+                return false;
+            }
+
+            if(phone == ''){
+                $('.phone').next().show();
+                return false;
+            }
+
+            if(password == ''){
+              $('.password').next().show();
+              return false;
+            }
+
+            if(confirmPassword == ''){
+                $('.confirmPassword').next().show();
+                return false;
+            }
+           
+            //ajax call php page
+            // $.post("send.php", $("#contactform").serialize(),  function(response) {
+            // $('#contactform').fadeOut('slow',function(){
+            //     $('#success').html(response);
+            //     $('#success').fadeIn('slow');
+            //    });
+            //  });
+             return false;
+          });
+      // });
+      
+      function IsEmail(email) {
+        var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        if(!regex.test(email)) {
+           return false;
+        }else{
+           return true;
+        }
+      }
 
 
 });

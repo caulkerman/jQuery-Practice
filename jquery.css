@@ -52,7 +52,7 @@ label {
 	width: 175px;
 	float: left;
 	padding: 6px;
-	/*font-weight: 900;*/
+	font-weight: 900;
 }
 
 #submitButton {

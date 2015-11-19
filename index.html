@@ -23,14 +23,19 @@
 	<div class="formWrapper">
 		<form id="validationForm">
 			<h2>Form Practice</h2>
+			
 			<label for="email" id="email">Email</label>
-			<input type="email" class="input" name="email" placeholder="Add Yor Email Here" />
-			<label for="[phone" id="phone">Phone Number</label>
-			<input type="number" class="input" name="phone" placeholder="Add Yor Telephone Number Here" />
+			<input type="email" class="input email" name="email" placeholder="Add Yor Email Here" /><span class="form_error">No</span><span class="form_error" id="invalid_email"> NO!!</span>
+			
+			<label for="phone" id="phone">Phone Number</label>
+			<input type="number" class="input phone" name="phone" placeholder="Add Yor Telephone Number Here" /><span class="form_error">NOO!!</span>
+			
 			<label for="password" id="password">Password</label>
-			<input type="password" class="input" name="password" placeholder="Add Yor Password Here" />
+			<input type="password" class="input password" name="password" placeholder="Add Yor Password Here" /><span class="form_error">Bad!</span>
+			
 			<label for="confirmPassword" id="confirmPassword">Confirm Password</label>
-			<input type="password" class="input" name="confirmPassword" placeholder="Confirm Password Here" />
+			<input type="password" class="input confirmPassword" name="confirmPassword" placeholder="Confirm Password Here" /><span class="form_error">Wrong!</span>
+			<br clear="all">
 			<input type="submit" value="Submit" id="submitButton" />
 		</form>
 	</div>
