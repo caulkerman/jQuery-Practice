@@ -94,28 +94,24 @@ $('.form_error').hide();
            var phone = $('.phone').val();
            var confirmPassword = $('.confirmPassword').val();
 
-            if(email == ''){
-               $('.email').next().show();
-               return false;
+            if (email == '') {
+            	$(".errorMessages1").html("<p>" + "Please enter your email" + "</p>");
             }
+
             if(IsEmail(email) == false){//function caller here.
-                $('#invalid_email').show();
-                return false;
+                $(".errorMessages1").html("<p>" + "Please enter a valid email" + "</p>");
             }
 
             if(phone == ''){
-                $('.phone').next().show();
-                return false;
+                $(".errorMessages2").html("<p>" + "Please enter your phone number" + "</p>");
             }
 
             if(password == ''){
-              $('.password').next().show();
-              return false;
+              $(".errorMessages3").html("<p>" + "Please enter your password" + "</p>");
             }
 
             if(confirmPassword == ''){
-                $('.confirmPassword').next().show();
-                return false;
+                $(".errorMessages4").html("<p>" + "Please confirm your password" + "</p>");
             }
            
             //ajax call php page
@@ -125,7 +121,7 @@ $('.form_error').hide();
             //     $('#success').fadeIn('slow');
             //    });
             //  });
-             return false;
+             // return false;
           });
       // });
       

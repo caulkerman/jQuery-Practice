@@ -52,14 +52,17 @@ label {
 	width: 175px;
 	float: left;
 	padding: 6px;
-	font-weight: 900;
 }
 
 #submitButton {
 	height: 35px;
-	width: 150px;
+	width: 312px;
 	background-color: #0099ff;
 	border: solid 1px gray;
 	border-radius: 4px;
 	margin: 0 0 0 187px;
+}
+
+.errorMessages {
+	color: red;
 }

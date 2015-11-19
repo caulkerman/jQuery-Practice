@@ -21,20 +21,31 @@
 	<br clear="all">
 	<hr>
 	<div class="formWrapper">
+		
 		<form id="validationForm">
 			<h2>Form Practice</h2>
 			
+			<div class="errorMessages1 errorMessages"></div>
+			<div class="errorMessages2 errorMessages"></div>
+			<div class="errorMessages3 errorMessages"></div>
+			<div class="errorMessages4 errorMessages"></div>
+			
+			<!-- <span class="form_error" id="invalid_email"> NO!!</span>
+			<span class="form_error">NOO!!</span>
+			<span class="form_error">Bad!</span>
+			<span class="form_error">Wrong!</span> -->
+			
 			<label for="email" id="email">Email</label>
-			<input type="email" class="input email" name="email" placeholder="Add Yor Email Here" /><span class="form_error">No</span><span class="form_error" id="invalid_email"> NO!!</span>
+			<input type="email" class="input email" name="email" placeholder="Add Email Here" />
 			
 			<label for="phone" id="phone">Phone Number</label>
-			<input type="number" class="input phone" name="phone" placeholder="Add Yor Telephone Number Here" /><span class="form_error">NOO!!</span>
+			<input type="number" class="input phone" name="phone" placeholder="Add Telephone Number Here" />
 			
 			<label for="password" id="password">Password</label>
-			<input type="password" class="input password" name="password" placeholder="Add Yor Password Here" /><span class="form_error">Bad!</span>
+			<input type="password" class="input password" name="password" placeholder="Add Password Here" />
 			
 			<label for="confirmPassword" id="confirmPassword">Confirm Password</label>
-			<input type="password" class="input confirmPassword" name="confirmPassword" placeholder="Confirm Password Here" /><span class="form_error">Wrong!</span>
+			<input type="password" class="input confirmPassword" name="confirmPassword" placeholder="Confirm Password Here" />
 			<br clear="all">
 			<input type="submit" value="Submit" id="submitButton" />
 		</form>
