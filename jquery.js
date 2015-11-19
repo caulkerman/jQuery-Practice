@@ -113,6 +113,10 @@ $('.form_error').hide();
             if(confirmPassword == ''){
                 $(".errorMessages4").html("<p>" + "Please confirm your password" + "</p>");
             }
+
+            if (confirmPassword != "" && confirmPassword != password) {
+            	$(".errorMessages5").html("<p>" + "Uh Oh! Your passwords don't match" + "</p>");
+            }
            
             //ajax call php page
             // $.post("send.php", $("#contactform").serialize(),  function(response) {
