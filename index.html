@@ -3,6 +3,8 @@
 <head>
 	<title>jQuery Practice</title>
 	<script src="jquery-2.1.4.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	<link rel="stylesheet" href="jquery.css" />
 </head>
 <body>
@@ -36,6 +38,7 @@
 			<span class="form_error">Bad!</span>
 			<span class="form_error">Wrong!</span> -->
 			
+			<div id="error"></div>
 			<label for="email" id="email">Email</label>
 			<input type="email" class="input email" name="email" placeholder="Add Email Here" />
 			
@@ -51,8 +54,55 @@
 			<input type="submit" value="Submit" id="submitButton" />
 		</form>
 	</div>
-
-
+	<br clear="all">
+	<hr>
+	<hr>
+	<br />
+	<h2>Using jQuery UI</h2>
+	<div id="draggableSquare">Drag Me Around</div>
+	<div id="resizable">Drag Me & Resize Me!</div>
+	<div id="targetDiv">Drop A Square Into Me, Drag Me, & Resize Me!</div>
+	<br clear="all">
+	<h2>Accordion</h2>
+	<div id="accordion">
+		<h3>Bob</h3>
+		<div>
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			.</p>
+		</div>
+		<h3>Bertha</h3>
+		<div>
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			.</p>
+		</div>
+		<h3>Danny</h3>
+		<div>
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			.</p>
+		</div>
+		<h3>Burk</h3>
+		<div>
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			.</p>
+		</div>
+		<h3>Bubba</h3>
+		<div>
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			.</p>
+		</div>
+		<h3>Skittles</h3>
+		<div>
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			.</p>
+		</div>
+	</div>
+	<h2>Sortable</h2>
+	<ul>
+		<li>Pizza</li>
+		<li>Cheese</li>
+		<li>Tomatoes</li>
+		<li>Chocolate</li>
+	</ul>
 	<!-- /////SCRIPTS///// -->
 
 	<script src="jquery.js"></script>

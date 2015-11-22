@@ -85,10 +85,10 @@ $("#validationForm").submit(function(event) {
 	event.preventDefault();
 // 	alert("This is a test for the validationForm")
 
-})
 
-$('.form_error').hide();
-      $('#submitButton').click(function(){
+
+
+      // $('#submitButton').click(function(){
            var password = $('.password').val();
            var email = $('.email').val();
            var phone = $('.phone').val();
@@ -126,17 +126,31 @@ $('.form_error').hide();
             //    });
             //  });
              // return false;
-          });
-      // });
+});
       
-      function IsEmail(email) {
-        var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-        if(!regex.test(email)) {
+      
+function IsEmail(email) {
+    var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    if(!regex.test(email)) {
            return false;
         }else{
            return true;
-        }
-      }
+    }
+}
+///////////jQuery UI //////////////////
+$("#draggableSquare").draggable();
+
+$("#resizable").resizable().draggable();
+
+ $("#targetDiv").droppable({
+ 	drop: function(ui, event) {
+ 		$("#targetDiv").css("background-color", "red");
+ 	}
+}).draggable().resizable();
+
+$("#accordion").accordion();
+
+$("ul").sortable();
 
 
 });
