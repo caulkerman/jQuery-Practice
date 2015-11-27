@@ -49,7 +49,7 @@ $("p").click(function() {
 
 
 $("#textFadeOut").click(function() {
-	$("#h2").fadeOut(2000, function() {
+	$("#h2").fadeOut(1000, function() {
 		alert("FadeOut Complete");
 	});
 	$(".square").css("background-color", "black")
@@ -123,7 +123,7 @@ $("#validationForm").submit(function(event) {
             // $('#contactform').fadeOut('slow',function(){
             //     $('#success').html(response);
             //     $('#success').fadeIn('slow');
-            //    });
+            //    });*/
             //  });
              // return false;
 });
@@ -152,5 +152,7 @@ $("#accordion").accordion();
 
 $("ul").sortable();
 
+$("tr:nth-child(odd)").addClass("alt");
+$('td:contains(Henry)').parent().children().addClass('highlight');
 
 });
